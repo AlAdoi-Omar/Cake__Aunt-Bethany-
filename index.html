@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Shop</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for cake cards */
+        .cake-card {
+          margin-bottom: 20px;
+        }
+        .cake-card img {
+          height: 200px;
+          object-fit: cover;
+          cursor: pointer; /* Add cursor pointer for better UX */
+        }
+        .wavy-text {
+          font-family: 'Lobster', cursive;
+          color: rgb(255, 0, 102); /* Default color */
+          text-shadow:
+            -1px -1px 0 #fff,
+            1px -1px 0 #fff,
+            -1px 1px 0 #fff,
+            1px 1px 0 #fff;
+        }
+    
+        body {
+          background-color: rgba(255, 20, 147, 0.3); /* Light pink background */
+        }
+    
+        .main-content {
+          padding: 50px 0;
+          background-color: #f8f9fa; /* Light gray background */
+        }
+    
+        .main-content p {
+          color: #6c757d; /* Gray color */
+        }
+        
+        .shine-text {
+          color: #FF0066; /* Pink color */
+          font-weight: bold;
+          text-shadow:
+            0 0 10px #fff, /* White shadow with a blur effect */
+            0 0 20px #FF0066, /* Pink shadow with a stronger blur effect */
+            0 0 40px #FF0066; /* Pink shadow with an even stronger blur effect */
+        }
+        
+        @media (min-width: 768px) {
+          .wavy-text {
+            font-size: 6rem;
+          }
+          .main-content p {
+            font-size: 2rem;
+          }
+          .shine-text {
+            font-size: 3rem;
+          }
+        }
+    
+        @media (min-width: 992px) {
+          .wavy-text {
+            font-size: 8rem;
+          }
+          .main-content p {
+            font-size: 2.5rem;
+          }
+          .shine-text {
+            font-size: 4rem;
+          }
+        }
+    
+        @media (min-width: 1200px) {
+          .wavy-text {
+            font-size: 10rem;
+          }
+        }
+      </style>
+
+</head>
+
+<body>
+    <div class="main-content text-center">
+        <h2 class="wavy-text">  git config --global user.email "you@example.com"</h2>
+        <p class="shine-text"> Eid Mubarak
+            Sweeten Your Eid Celebrations with Aunt Bethany's exquisite chocolate delights! 💕 </p>
+        <p class="shine-text">💕عيدكم مبارك وعساكم من عواده </p>
+    </div>
+
+    <div class="container  my-3">
+        <div class="row">
+            <div class=" col-sm-6 col-md-4 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/Tray11.jpg" class="card-img-top" alt="Tray11"
+                        onclick="showImage('images/Tray11.jpg', 'NameProduct : Tray 11', 'Flavors : Hazelnut, Caramel, Pistachio, Almond, Pistacnio, Corn Flakes','Price : 367.5 AED','Size :1.600')">
+                    <div class="card-body">
+                        <h5 class="card-title">Tray 11</h5>
+                        <p class="card-text">Hazelnut, Caramel, Pistachio, Almond, Pistacnio, Corn Flakes</p>
+                        <span>367.5 AED</span>
+                        <br>
+                        <p class="size"> 1.600 Gram</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/Tray20.jpg" class="card-img-top" alt="Tray20"
+                        onclick="showImage('images/Tray20.jpg', 'NameProduct : Tray20', 'Flavors : Hazelnut & Coffee', 'Price: 493.5 AED','Size:1.300')">
+                    <div class="card-body">
+                        <h5 class="card-title">Tray20</h5>
+                        <p class="card-text"> Hazelnut & Coffee</p>
+                        <span> 493.5 AED</span>
+                        <p class="size"> 1.300 Gram</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/Tray26.jpg" class="card-img-top" alt="Tray26"
+                        onclick="showImage('images/Tray26.jpg', 'NameProduct : Tray26', 'Flavors: Pistachio, Hazelnut, Cornflakes, Coconut & Cheesecake','Price : 407.4 AED','Size: 1 KG' )">
+                    <div class="card-body">
+                        <h5 class="card-title">Tray26</h5>
+                        <p class="card-text">Pistachio, Hazelnut, Cornflakes, Coconut & Cheesecake</p>
+                        <span>407.4 AED</span>
+                        <p class="size"> 1 KG</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/Tray29.jpg" class="card-img-top" alt="Tray29"
+                        onclick="showImage('images/Tray29.jpg', 'NameProduct : Tray29', 'Flavors: Caramel & Raspbeny','Price : 325.5 AED', 'Size: 1KG' )">
+                    <div class="card-body">
+                        <h5 class="card-title">Tray29</h5>
+                        <p class="card-text">Caramel & Raspbeny</p>
+                        <span>325.5 AED</span>
+                        <p class="size"> 1 KG</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/Tray36.jpg" class="card-img-top" alt="Tray36"
+                        onclick="showImage('images/Tray36.jpg', 'NameProduct : Tray36', 'Flavors:Dark filling with futtine, Hazelnut filling with rosted Hazelnut Almond filling','Price : 413.7 AED' ,'Size:1.400 KG' )">
+                    <div class="card-body">
+                        <h5 class="card-title">Tray36</h5>
+                        <p class="card-text"> Dark filling with futtine .
+                            Hazelnut filling with rosted Hazelnut.
+                            Almond filling</p>
+                        <span>325.5 AED</span>
+                        <p class="size"> 1.400 KG</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/Tray38.jpg" class="card-img-top" alt="Tray38" onclick="showImage('images/Tray38.jpg', 'NameProduct : Tray38', 'Flavors: flavour Peanut almond filling hazelnut Dark filling.','Price : 378 AED','Size: 2.200 KG')">
+                    <div class="card-body">
+                        <h5 class="card-title">Tray38</h5>
+                        <p class="card-text">flavour
+                            Peanut almond filling hazelnut Dark filling.</p>
+                        <span>378 AED</span>
+                        <p class="size"> 2.200 KG</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/Tray71.jpg" class="card-img-top" alt="Tray71"
+                        onclick="showImage('images/Tray71.jpg', 'NameProduct : Tray71', 'Flavors: Savor the exquisite crunch of milk chocolate disks, each delicately filled with luscious caramel and topped with crispy cornflakes','Price : 349.12 AED', 'Size:1.101 KG' )">
+                    <div class="card-body">
+                        <h5 class="card-title">Tray71</h5>
+                        <p class="card-text">Savor the exquisite crunch of milk chocolate disks, each delicately filled
+                            with luscious caramel and topped with crispy cornflakes</p>
+                        <span>349.12 AED</span>
+                        <p class="size"> 1.101 KG</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/Tray72.jpg" class="card-img-top" alt="Tray72"
+                        onclick="showImage('images/Tray72.jpg', 'NameProduct : Tray72', 'Flavors: Savor the delightful blend of pistachio, hazelnut, and sesame croquant, generously coated with silky milk chocolate','Price : 190.05 AED', 'Size : 584 Grams' )">
+                    <div class="card-body">
+                        <h5 class="card-title">Tray72</h5>
+                        <p class="card-text">Savor the exquisite crunch of milk chocolate disks, each delicately filled
+                            with luscious caramel and topped with crispy cornflakes</p>
+                        <span>190.05 AED</span>
+                        <p class="size"> 584 Grams</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/Tray73.jpg" class="card-img-top" alt="Tray73"
+                        onclick="showImage('images/Tray73.jpg', 'NameProduct : Tray73', 'Flavors: Savor the rich symphony of milk chocolate adorned with pecans and a touch of golden elegance.','Price : 517.65 AED', 'Size  :1.520 KG' )">
+                    <div class="card-body">
+                        <h5 class="card-title">Tray73</h5>
+                        <p class="card-text">Savor the exquisite crunch of milk chocolate disks, each delicately filled
+                            with luscious caramel and topped with crispy cornflakes</p>
+                        <span>517.65 AED</span>
+                        <p class="size"> 1.520 KG </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/Tray76.jpg" class="card-img-top" alt="Tray76"
+                        onclick="showImage('images/Tray76.jpg', 'NameProduct : Tray76', 'Flavors: Indulge in the rich harmony of flavors with our crispy cigars, each generously filled with luscious cappuccino cream and dusted with cocoa powder for a luxurious treat.','Price : 304.5 AED', 'Size : 1.008 KG' )">
+                    <div class="card-body">
+                        <h5 class="card-title">Tray76</h5>
+                        <p class="card-text">Indulge in the rich harmony of flavors with our crispy cigars, each
+                            generously filled with luscious cappuccino cream and dusted with cocoa powder for a
+                            luxurious treat.</p>
+                        <span>304.5 AED</span>
+                        <p class="size"> 1.008 KG</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/Tray77.jpg" class="card-img-top" alt="Tray77"
+                        onclick="showImage('images/Tray77.jpg', 'NameProduct : Tray77', 'Flavors: Experience the perfect blend of indulgence with our milk chocolate swirled disks. Topped with the delightful crunch of pistachio, hazelnuts, and an assortment of nuts.','Price : 304.5 AED', 'Size : 1.005 KG' )">
+                    <div class="card-body">
+                        <h5 class="card-title">Tray77</h5>
+                        <p class="card-text">Experience the perfect blend of indulgence with our milk chocolate swirled
+                            disks. Topped with the delightful crunch of pistachio, hazelnuts, and an assortment of nuts.
+                        </p>
+                        <span>304.5 AED</span>
+                        <p class="size"> 1.005 KG</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/Tray80.jpg" class="card-img-top" alt="Tray80"
+                        onclick="showImage('images/Tray80.jpg', 'NameProduct : Tray80', 'Flavors: Savor the symphony of indulgence with our assorted arrangement of chocolates. Delight in the lusciousness of milk chocolates, the velvety allure of white chocolates, and the rich decadence of caramel chocolates. Each piece is a masterpiece, filled with a symphony of caramel, coconut, hazelnut, and cappuccino goodness.','Price : 261.34 AED', 'Size : 765 Grams' )">
+                    <div class="card-body">
+                        <h5 class="card-title">Tray80</h5>
+                        <p class="card-text">Savor the symphony of indulgence with our assorted arrangement of
+                            chocolates. Delight in the lusciousness of milk chocolates, the velvety allure of white
+                            chocolates, and the rich decadence of caramel chocolates. Each piece is a masterpiece,
+                            filled with a symphony of caramel, coconut, hazelnut, and cappuccino goodness.</p>
+                        <span>261.34 AED</span>
+                        <p class="size"> 765 Grams</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/Tray83.jpg" class="card-img-top" alt="Tray83"
+                        onclick="showImage('images/Tray83.jpg', 'NameProduct : Tray83', 'Flavors:Indulge in the divine combination of smooth caramel chocolate disks, generously topped with the irresistible crunch of crushed hazelnuts.','Price : 216.3 AED', 'Size : 640 Grams' )">
+                    <div class="card-body">
+                        <h5 class="card-title">Tray83</h5>
+                        <p class="card-text">Indulge in the divine combination of smooth caramel chocolate disks,
+                            generously topped with the irresistible crunch of crushed hazelnuts.</p>
+                        <span>216.3 AED</span>
+                        <p class="size"> 640 Grams</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/Tray84.jpg" class="card-img-top" alt="Tray84"
+                        onclick="showImage('images/Tray84.jpg', 'NameProduct : Tray84', 'Flavors:Savor the exquisite taste of ruby chocolate disks adorned with the vibrant sweetness of dried cranberries.','Price : 232.75 AED', 'Size : 697 Grams' )">
+                    <div class="card-body">
+                        <h5 class="card-title">Tray84</h5>
+                        <p class="card-text">Savor the exquisite taste of ruby chocolate disks adorned with the vibrant
+                            sweetness of dried cranberries.</p>
+                        <span>232.75 AED</span>
+                        <p class="size"> 697 Grams</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/Tray85.jpg" class="card-img-top" alt="Tray85"
+                        onclick="showImage('images/Tray85.jpg', 'NameProduct : Tray85', 'Flavors: Indulge in the rich, nutty goodness of pistachio chocolate disks, crowned with a generous sprinkle of crushed pistachios.','Price : 234.15 AED', 'Size : 704 Grams' )">
+                    <div class="card-body">
+                        <h5 class="card-title">Tray85</h5>
+                        <p class="card-text">Indulge in the rich, nutty goodness of pistachio chocolate disks, crowned
+                            with a generous sprinkle of crushed pistachios.
+                        </p>
+                        <span>234.15 AED</span>
+                        <p class="size"> 704 Grams</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/Tray86.jpg" class="card-img-top" alt="Tray86"
+                        onclick="showImage('images/Tray86.jpg', 'NameProduct : Tray86', 'Flavors: Savor the delightful crunch of our milk chocolate disks, generously adorned with golden crispy flakes.','Price : 230.16 AED', 'Size : 688 Grams' )">
+                    <div class="card-body">
+                        <h5 class="card-title">Tray86</h5>
+                        <p class="card-text">Savor the delightful crunch of our milk chocolate disks, generously adorned
+                            with golden crispy flakes.
+                        </p>
+                        <span>230.16 AED</span>
+                        <p class="size"> 688 Grams</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/Tray89modler.jpg" class="card-img-top" alt="Tray89modler"
+                        onclick="showImage('images/Tray89modler.jpg', 'NameProduct : Tray89modler', 'Flavors:                 Divine chocolate sandwiches bursting with delectable flavors. indulge in the luscious combination of caramel chocolate with a rice caramel filling and crushed hazelnuts. Or indulge in with pistachio goodneess and adorned with crushed pistachios','Price :  399 AED', 'Size : 1 KG' )">
+                    <div class="card-body">
+                        <h5 class="card-title">Tray89modler</h5>
+                        <p class="card-text">
+                            Divine chocolate sandwiches bursting with delectable flavors. indulge in the luscious
+                            combination of caramel chocolate with a rice caramel filling and crushed hazelnuts. Or
+                            indulge in with pistachio goodneess and adorned with crushed pistachios
+                        </p>
+                        <span>399 AED</span>
+                        <p class="size"> 1 KG</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/TRIO-BISCUITS-TRAY.jpg" class="card-img-top" alt="TRIO-BISCUITS-TRAY"
+                        onclick="showImage('imges/.jpg', 'NameProduct : TRIO-BISCUITS-TRAY', 'Flavors: Experience the perfect blend of textures with our assortment of biscuits, delicately coated with nuts and crowned with layers of strawberry jam, pistachio cream, and hazelnut cream.','Price : 175 AED', 'Size : 1 KG' )">
+                    <div class="card-body">
+                        <h5 class="card-title">TRIO-BISCUITS-TRAY</h5>
+                        <p class="card-text">
+                            Experience the perfect blend of textures with our assortment of biscuits, delicately coated
+                            with nuts and crowned with layers of strawberry jam, pistachio cream, and hazelnut cream.
+                        </p>
+                        <span>175 AED</span>
+                        <p class="size"> 1 KG</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/PETIFOUR-BISCUITS.jpg" class="card-img-top" alt="PETIFOUR BISCUITS"
+                        onclick="showImage('images/PETIFOUR-BISCUITS.jpg', 'NameProduct : PETIFOUR BISCUITS', 'Flavors:Indulge in the symphony of flavors as you bite into our biscuits filled with the richness of almonds, chocolate, and coconut vanilla. Each piece is adorned with a crunchy layer of almonds.','Price : 189 AED', 'Size : 1.220 KG' )">
+                    <div class="card-body">
+                        <h5 class="card-title">PETIFOUR BISCUITS</h5>
+                        <p class="card-text">
+                            Indulge in the symphony of flavors as you bite into our biscuits filled with the richness of
+                            almonds, chocolate, and coconut vanilla. Each piece is adorned with a crunchy layer of
+                            almonds.
+                        </p>
+                        <span>189 AED</span>
+                        <p class="size"> 1.220 KG</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/Rangina-Tray.jpg" class="card-img-top" alt="Rangina-Tray"
+                        onclick="showImage('images/Rangina-Tray.jpg', 'NameProduct : Rangina-Tray', 'Flavors:  ','Price : 250 AED', 'Size : 1.200 KG')">
+                    <div class="card-body">
+                        <h5 class="card-title">Rangina-Tray</h5>
+                        <p class="card-text">
+
+                        </p>
+                        <span>250 AED</span>
+                        <p class="size"> 1.200 KG</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <section>
+            <h2 class="shine-text text-center main-content"> NEW Eid Al Adha ❤️</h2>
+        </section>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/NewEid101.jpg" class="card-img-top" alt="NewEid101"
+                        onclick="showImage('images/NewEid101.jpg', 'NameProduct : NewEid101', 'Flavors: Milk Chocolate and Hazelnut filling, Gold Callets and Cappuccino Filling, White Chocolate and Coconut Filling','Price : 470 AED', 'Size : 1.600 KG')">
+                    <div class="card-body">
+                        <h5 class="card-title">NewEid101</h5>
+                        <p class="card-text">
+                            Milk Chocolate and Hazelnut filling, Gold Callets and Cappuccino Filling, White Chocolate
+                            and Coconut Filling
+                        </p>
+                        <span>470 AED</span>
+                        <p class="size"> 1.600 KG</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/NewEid102.jpg" class="card-img-top" alt="NewEid102.jpg"
+                        onclick="showImage('images/NewEid102.jpg', 'NameProduct : NewEid102', 'Flavors: Milk Chocolate pistachio Stick Pomegranate Dried Fruits','Price : 528 AED', 'Size : 1.800 KG' )">
+                    <div class="card-body">
+                        <h5 class="card-title">NewEid102</h5>
+                        <p class="card-text">
+                            Milk Chocolate pistachio Stick Pomegranate Dried Fruits
+                        </p>
+                        <span>528 AED</span>
+                        <p class="size"> 1.800 KG</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/NewEid103.jpg" class="card-img-top" alt="NewEid103.jpg"
+                        onclick="showImage('images/NewEid103.jpg', 'NameProduct : NewEid103', 'Flavors:   Hazelnut Filling with Dark Filling and Milk Chocolate','Price : 360 AED',  'Size : 1.200 KG')">
+                    <div class="card-body">
+                        <h5 class="card-title">NewEid103</h5>
+                        <p class="card-text">
+                            Hazelnut Filling with Dark Filling and Milk Chocolate
+                        </p>
+                        <span>360 AED</span>
+                        <p class="size"> 1.200 KG</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/NewEid104.jpg" class="card-img-top" alt="NewEid104.jpg"
+                        onclick="showImage('images/NewEid104.jpg', 'NameProduct : NewEid104', 'Flavors:     Milk Chocolate, Hazelnut, Pistacio and Cranberries','Price : 425 AED', 'Size : 1.450 KG' )">
+                    <div class="card-body">
+                        <h5 class="card-title">NewEid104</h5>
+                        <p class="card-text">
+                            Milk Chocolate, Hazelnut, Pistacio and Cranberries
+                        </p>
+                        <span>425 AED</span>
+                        <p class="size"> 1.450 KG</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/NewEid105.jpg" class="card-img-top" alt="NewEid105.jpg"
+                        onclick="showImage('images/NewEid105.jpg', 'NameProduct : NewEid105', 'Flavors:Milk Chocolate and Coffee Crunchy Filling','Price : 528 AED', 'Size : 520 Grams' )">
+                    <div class="card-body">
+                        <h5 class="card-title">NewEid105</h5>
+                        <p class="card-text">
+                            Milk Chocolate and Coffee Crunchy Filling
+                        </p>
+                        <span>528 AED</span>
+                        <p class="size"> 520 Grams</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/Sticks-Box.jpg" class="card-img-top" alt="Sticks-Box.jpg"
+                        onclick="showImage('images/Sticks-Box.jpg', 'NameProduct : Sticks-Box', 'Flavors:  pistachio Caramel, Strawberry','Price : 245 AED', 'Size : 785 Grams' )">
+                    <div class="card-body">
+                        <h5 class="card-title">Sticks-Box</h5>
+                        <p class="card-text">
+                            pistachio Caramel, Strawberry
+                        </p>
+                        <span>245 AED</span>
+                        <p class="size"> 785 Grams</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/Mixed-Box.jpg" class="card-img-top" alt="Mixed-Box.jpg"
+                        onclick="showImage('images/Mixed-Box.jpg', 'NameProduct : Mixed-Box.jpg', 'Flavors:  Almond Slice, Milk Chocolate, Pistachio Sticks, Dark Chocolate','Price : 195 AED' , 'Size : 600 Grams' )">
+                    <div class="card-body">
+                        <h5 class="card-title">Mixed-Box.jpg</h5>
+                        <p class="card-text">
+                            Almond Slice, Milk Chocolate, Pistachio Sticks, Dark Chocolate
+                        </p>
+                        <span>195 AED</span>
+                        <p class="size"> 600 Grams</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/Delight-Tray.jpg" class="card-img-top" alt="Delight-Tray.jpg" onclick="showImage('images/Delight-Tray.jpg', 'NameProduct: Delight-Tray' ,'Flavors :5 flavour Turkish delight, Pomegranate, Pistachio, Figs walnut, Rose, Walnut','Price : 265 AED', 'Size: 2 KG'
+           )">
+                    <div class="card-body">
+                        <h5 class="card-title">Delight-Tray</h5>
+                        <p class="card-text">
+                            5 flavour Turkish delight, Pomegranate, Pistachio, Figs walnut, Rose, Walnut
+                        </p>
+                        <span>265 AED</span>
+                        <p class="size"> 2 KG</p>
+                    </div>
+                </div>
+            </div>
+               <div class="col-md-4 col-sm-6 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/Cake 1.jpg" class="card-img-top" alt="Cake 1" onclick="showImage('images/Cake 1.jpg', 'NameProduct: Pistachio Cake ','Price : 240 AED', 'Weight: ')">
+                    <div class="card-body">
+                        <h5 class="card-title">Pistachio Cake</h5>
+                        <p class="card-text">
+
+                        </p>
+                        <span> 240 AED</span>
+                        <p class="size"> _</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/Cake 2.jpg" class="card-img-top" alt="Cake 2" onclick="showImage('images/Cake 2.jpg', 'NameProduct: Mango Cake ','Price : 210 AED', 'Weight:')">
+                    <div class="card-body">
+                        <h5 class="card-title">Mango Cake</h5>
+                        <p class="card-text">
+
+                        </p>
+                        <span>210 AED</span>
+                        <p class="size">   </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/Box2.jpg" class="card-img-top" alt="Box2" onclick="showImage('images/Box2.jpg', 'NameProduct: Mini Cake Box', 'Flavors: Crunchy Chocolate Ispahan Honey & Caramel Black Forest Strawberry Pistachio and Mango','Price : 189 AED',"6 PCS"
+           )">
+                    <div class="card-body">
+                        <h5 class="card-title">Mini Cake Box </h5>
+                        <p class="card-text">
+Crunchy Chocolate Ispahan Honey & Caramel Black Forest Strawberry Pistachio and Mango
+                        </p>
+                        <span> 189 AED</span>
+                     <p> 6 PCS each box</p> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-lg-3">
+                <div class="card cake-card">
+                    <img src="images/box.jpg" class="card-img-top" alt=" Date box" onclick="showImage('images/box.jpg', 'NameProduct: Date Box', 'Flavors: Assorted dates mixed with walnut stuffed, With 7 flavours, Pistachio, Almond ,Rose ,Coconut ,Pomegranate ,Lotus ,Oreo','Price : 189 AED'
+           ,'42 Pieces')">
+                    <div class="card-body">
+                        <h5 class="card-title">Date Box</h5>
+                        <p class="card-text">
+Assorted dates mixed with walnut stuffed. 
+With 7 flavours. 
+Pistachio 
+Almond 
+Rose 
+Coconut 
+Pomegranate 
+Lotus 
+Oreo
+                        </p>
+                        <span> 189 AED</span>
+                        <p> 42 Pieces</p> 
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // JavaScript function to show image details
+        function showImage(src, title, description, price, size) {
+            // Create a modal element
+            var modal = document.createElement('div');
+            modal.classList.add('modal');
+            modal.innerHTML = `
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">${title}</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="${src}" class="img-fluid text-center" alt="${title}">
+              <p>${description}</p>
+              <span class="bg-gray font-weight-bold">${price} </span>
+              <br>
+              <span>${size} </span>
+            </div>
+          </div>
+        </div>
+      `;
+            // Append modal to body and show it
+            document.body.appendChild(modal);
+            $(modal).modal('show');
+        }
+    </script>
+</body>
+
+</html>
